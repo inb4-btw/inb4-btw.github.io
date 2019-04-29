@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>OSRS Beginner Clue Hot-Cold Map</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dragscroll">
+<div id="map-image"><img src="osrsmap.png"></div>
+<div id="toggle-menu">
+  <h3>Toggle by distance</h3>
+  <input id="visibly-shaking" class="zonetype-toggle" data-target="visibly-shaking" type="checkbox" checked>Dig zone<br>
+  <input id="incredibly-hot" class="zonetype-toggle" data-target="incredibly-hot" type="checkbox" checked>Incredibly hot<br>
+  <input id="very-hot" class="zonetype-toggle" data-target="very-hot" type="checkbox" checked>Very hot<br>
+  <input id="hot" class="zonetype-toggle" data-target="hot" type="checkbox" checked>Hot<br>
+  <input id="warm" class="zonetype-toggle" data-target="warm" type="checkbox" checked>Warm<br>
+  <input id="cold" class="zonetype-toggle" data-target="cold" type="checkbox" checked>Cold<br>
+  <input id="very-cold" class="zonetype-toggle" data-target="very-cold" type="checkbox">Very cold<br>
+  <h3>Toggle by final location</h3>
+  <input id="toggle-draynor-manor" class="zonegroup-toggle" data-target="zone-draynor-manor" type="checkbox" checked>Draynor Manor<br>
+  <input id="toggle-ice-mountain" class="zonegroup-toggle" data-target="zone-ice-mountain" type="checkbox" checked>Ice Mountain<br>
+  <input id="toggle-wheat-field" class="zonegroup-toggle" data-target="zone-wheat-field" type="checkbox" checked>Draynor wheat field<br>
+  <input id="toggle-cow-field" class="zonegroup-toggle" data-target="zone-cow-field" type="checkbox" checked>Lumbridge cow field<br>
+  <input id="toggle-al-kharid-mine" class="zonegroup-toggle" data-target="zone-al-kharid-mine" type="checkbox" checked>Al'Kharid mine<br>
+</div>
+<ul>
+  <li id="zone-draynor-manor" class="center-point"></li>
+  <li id="zone-ice-mountain" class="center-point"></li>
+  <li id="zone-wheat-field" class="center-point"></li>
+  <li id="zone-cow-field" class="center-point"></li>
+  <li id="zone-al-kharid-mine" class="center-point"></li>
+</ul>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js'></script>
+<script  src="js/index.js"></script>
+</body>
+
+</html>
